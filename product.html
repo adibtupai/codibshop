@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <nav>
+        <label class="logo"><a href="product.html">CODIBSHOP</a></label>
+        <a class="checkoutbtn" href="cart.html" onclick="calculation()"><img class="checkoutimg" src="checkoutbtn.png" alt="" style="width: 250px; margin-top: 5px; float: right; margin-right: 20px;"></a>
+    </nav>
+    <center>
+        <br>
+        <h1>CATEGORY</h1>
+        <br>
+        <table border="1" style="border: 1px solid;">
+            <tr>
+                <th colspan="2"><h1>BEVERAGES</h1></th>
+                <th colspan="2"><h1>BREAD</h1></th>
+                <th colspan="2"><h1>BISCUITS</h1></th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="product/Dutch Lady.jpg" alt="">
+                    <center>
+                        <p>Quantity</p>
+                        <a><input type="number" id="dutch_q" min="0" value="0"></a>
+                    </center>
+                </td>
+                <td><h1>DUTCH LADY</h1><br><br><p>Dutch Lady Full Cream 200ml</p><br><h2 style="color: green;">RM2.10</h2></td>
+                <td>
+                    <img src="product/Gardenia.jpg" alt="">
+                    <center>
+                        <p>Quantity</p>
+                        <a><input type="number" id="gardenia_q" min="0" value="0"></a>
+                    </center>
+                </td>
+                <td><h1>GARDENIA</h1><br><br><p>Gardenia Wholemeal 400g</p><br><h2 style="color: green;">RM4.40</h2></td>
+                <td>
+                    <img src="product/Lexus.jpg" alt="">
+                    <center>
+                        <p>Quantity</p>
+                        <a><input type="number" id="lexus_q" min="0" value="0"></a>
+                    </center>
+                </td>
+                <td><h1>LEXUS</h1><br><br><p>Munchy's Lexus Chocolate <br> Coated 80g</p><br><h2 style="color: green;">RM2.70</h2></td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="product/Milo.jpg" alt="">
+                    <center>
+                        <p>Quantity</p>
+                        <a><input type="number" id="milo_q" min="0" value="0"></a>
+                    </center>
+                </td>
+                <td><h1>MILO</h1><br><br><p>Nestle Milo 200ml</p><br><h2 style="color: green;">RM1.90</h2></td>
+                <td>
+                    <img src="product/Massimo.jpg" alt="">
+                    <center>
+                        <p>Quantity</p>
+                        <a><input type="number" id="massimo_q" min="0" value="0"></a>
+                    </center>
+                </td>
+                <td><h1>MASSIMO</h1><br><br><p>Massimo Bread 400g</p><br><h2 style="color: green;">RM3.00</h2></td>
+                <td>
+                    <img src="product/Oat Krunch.jpg" alt="">
+                    <center>
+                        <p>Quantity</p>
+                        <a><input type="number" id="oat_q" min="0" value="0"></a>
+                    </center>
+                </td>
+                <td><h1>OAT KRUNCH</h1><br><br><p>Munchy's Oat Krunch 156g</p><br><h2 style="color: green;">RM3.50</h2></td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="product/Wonda Coffee.jpg" alt="">
+                    <center>
+                        <p>Quantity</p>
+                        <a><input type="number" id="wonda_q" min="0" value="0"></a>
+                    </center>
+                </td>
+                <td><h1>WONDA COFFEE</h1><br><br><p>Wonda Coffee Premium Coffee 240ml</p><br><h2 style="color: green;">RM2.10</h2></td>
+                <td>
+                    <img src="product/Mighty White.jpg" alt="">
+                    <center>
+                        <p>Quantity</p>
+                        <a><input type="number" id="mighty_q" min="0" value="0"></a>
+                    </center>
+                </td>
+                <td><h1>MIGHTY WHITE</h1><br><br><p>Mighty White Bread 550g</p><br><h2 style="color: green;">RM4.20</h2></td>
+                <td>
+                    <img src="product/Oreo.jpg" alt="">
+                    <center>
+                        <p>Quantity</p>
+                        <a><input type="number" id="oreo_q" min="0" value="0"></a>
+                    </center>
+                </td>
+                <td><h1>OREO</h1><br><br><p>Oreo Original 133g</p><br><h2 style="color: green;">RM3.50</h2></td>
+            </tr>
+        </table>
+    </center>
+    <script src="orderingsystem.js"></script>
+</body>
+</html>

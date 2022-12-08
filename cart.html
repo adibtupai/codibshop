@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+    <style>
+        th{
+            font-size: 26px;
+        }
+        td{
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <label class="logo"><a href="product.html">CODIBSHOP</a></label>
+        <a onclick="history.back()" style="float: right; margin-top: 20px; margin-right: 60px; font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 26px; cursor: pointer;">Continue Shopping</a>
+    </nav>
+    <center>
+        <table border="1" id="data-output">
+        </table>
+    </center>
+    <script>
+        //Get data from local storage
+        let p1_q = localStorage.getItem("p1Q");
+        let p2_q = localStorage.getItem("p2Q");
+        let p3_q = localStorage.getItem("p3Q");
+        let p4_q = localStorage.getItem("p4Q");
+        let p5_q = localStorage.getItem("p5Q");
+        let p6_q = localStorage.getItem("p6Q");
+        let p7_q = localStorage.getItem("p7Q");
+        let p8_q = localStorage.getItem("p8Q");
+        let p9_q = localStorage.getItem("p9Q");
+
+        let p1_n = localStorage.getItem("p1N");
+        let p2_n = localStorage.getItem("p2N");
+        let p3_n = localStorage.getItem("p3N");
+        let p4_n = localStorage.getItem("p4N");
+        let p5_n = localStorage.getItem("p5N");
+        let p6_n = localStorage.getItem("p6N");
+        let p7_n = localStorage.getItem("p7N");
+        let p8_n = localStorage.getItem("p8N");
+        let p9_n = localStorage.getItem("p9N");
+
+        let p1_p = localStorage.getItem("p1P");
+        let p2_p = localStorage.getItem("p2P");
+        let p3_p = localStorage.getItem("p3P");
+        let p4_p = localStorage.getItem("p4P");
+        let p5_p = localStorage.getItem("p5P");
+        let p6_p = localStorage.getItem("p6P");
+        let p7_p = localStorage.getItem("p7P");
+        let p8_p = localStorage.getItem("p8P");
+        let p9_p = localStorage.getItem("p9P");
+
+        let disc = localStorage.getItem("discount");
+        
+        let product_name = [p1_n, p2_n, p3_n, p4_n, p5_n, p6_n, p7_n, p8_n, p9_n];
+        let product_quant = [p1_q, p2_q, p3_q, p4_q, p5_q, p6_q, p7_q, p8_q, p9_q];
+        let product_price = [p1_p, p2_p, p3_p, p4_p, p5_p, p6_p, p7_p, p8_p, p9_p];
+        let total_price = "RM" + localStorage.getItem("totalprice");
+        let postage = localStorage.getItem("postage_price");
+
+        let sentence = "<tr><th colspan=\"2\">Product</th><th>Price</th></tr>";
+        let i;
+        for (i = 0; i < 9; i++){
+            if (product_quant[i].localeCompare("0") != 0){
+                sentence += "<tr><td><img src=\"product/" + product_name[i] + ".jpg\"></td><td>" + product_quant[i] + " X " + product_name[i] + "</td><td>" + product_quant[i] + " X " + product_price[i] + "</td></tr>";
+            }
+        }
+        sentence += "<tr><th colspan=\"3\">Discount = " +disc  + "%</th></tr>" + "<tr><th colspan=\"2\">Postage Fee</th><th>" + postage + "<tr><th colspan=\"2\">TOTAL PRICE</th><th>" + total_price + "</th></tr>";
+        document.getElementById("data-output").innerHTML = sentence;
+    </script>
+</body>
+</html>

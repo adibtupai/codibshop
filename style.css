@@ -1,0 +1,168 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.background {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.registration{
+    width: 400px;
+    height: 600px;
+    position: relative;
+    margin: 6% auto;
+    background: white;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.btn{
+    width: 330px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.btn2{
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    width: 180px;
+    height: 100%;
+    background: linear-gradient(to right, white, lightblue);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.btnstyle{
+    padding: 20px 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+.inputlogin{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+    left: 50px;
+}
+
+.input1{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-top: 0;
+    border-bottom: 1px solid black;
+    border-right: 0;
+    border-left: 0;
+    outline: none;
+    background: transparent;
+}
+
+.submitbtn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, white, lightblue);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.checkboxes{
+    margin: 30px 10px 30px 0;
+}
+
+span{
+    color: black;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+.inputregis{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+    left: 450px;
+}
+
+.success{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    background-color: white;
+    padding: 19px 14px;
+    border-radius: 10px;
+    border-left: 4px solid blue;
+}
+
+.msg{
+    font-size: 18px;
+    color: black;
+    margin: 0 20px;
+    position: static;
+}
+
+.success.show{
+    animation: show_slide 1s
+    ease forwards;
+}
+
+@keyframes show_slide{
+    0%{
+        transform: translateX(100%);
+    }
+
+    40%{
+        transform: translateX(-10%);
+    }
+
+    80%{
+        transform: translateX(0%);
+    }
+
+    100%{
+        transform: translateX(-10px);
+    }
+}
+
+.success.hide{
+    animation: hide_slide 1s
+    ease forwards;
+}
+
+@keyframes hide_slide{
+    0%{
+        transform: translateX(-10px);
+    }
+
+    40%{
+        transform: translateX(0%);
+    }
+
+    80%{
+        transform: translateX(-10%);
+    }
+
+    100%{
+        transform: translateX(100%);
+    }
+}
+

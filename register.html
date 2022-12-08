@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="registration">
+            <div class="btn">
+                <div id="btn2" class="btn2"></div>
+                <button class="btnstyle" onclick="login()" >Login</button>
+                <button class="btnstyle" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="inputlogin" action="product.html">
+                <input id="username" type="text" class="input1" placeholder="Username" pattern="{1,20}" required>
+                <input id="psw" type="password" class="input1" placeholder="Enter Password" pattern="{1,20}" required>
+                <input type="checkbox" class="checkboxes"><span>Remember Password</span>
+                <button type="submit" class="submitbtn">Login</button>
+            </form>
+            <form id="regis" class="inputregis">
+                <input type="text" class="input1" placeholder="First Name" required>
+                <input type="text" class="input1" placeholder="Last Name" required>
+                <input type="text" class="input1" placeholder="Username" required>
+                <input type="password" class="input1" placeholder="Enter Password" required>
+                <input type="email" class="input1" placeholder="Email Address" required>
+                <input type="checkbox" class="checkboxes"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submitbtn">Register</button>
+            </form>
+        </div>
+        <div class="success hide">
+            <span class="msg">Successfully Registered</span>
+        </div>
+    </div>
+    <script src="orderingsystem.js"></script>
+</body>
+</html>
